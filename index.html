@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matrix Operations Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Matrix Operations Visualizer</h1>
+    </header>
+
+    <main>
+        <section class="matrix-input">
+            <h2>Matrix Inputs</h2>
+            <div id="matrix-section">
+                <div>
+                    <label for="matrix1">Matrix 1:</label>
+                    <textarea id="matrix1" placeholder="Example: 1,2,3"></textarea>
+                </div>
+                <div>
+                    <label for="matrix2">Matrix 2:</label>
+                    <textarea id="matrix2" placeholder="Example: 4,5,6"></textarea>
+                </div>
+
+                <script>
+                    // JavaScript to dynamically update the placeholder with multiline examples
+                    document.getElementById("matrix1").placeholder = "1,2\n3,4";
+                    document.getElementById("matrix2").placeholder = "5,6\n7,8";
+                </script>
+
+
+            </div>
+            <button id="matrix-add">Add Matrices</button>
+            <button id="matrix-multiply">Multiply Matrices</button>
+
+        </section>
+
+        <section class="operation-output">
+            <h2>Result</h2>
+            <div id="output"></div>
+            <div id="step-by-step"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Matrix Operations Visualizer</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
